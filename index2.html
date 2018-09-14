@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lange="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.48" />
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Falco - Cloud Native Runtime Security</title>
+    
+
+<link rel="icon" type="image/png" href="https://falcosecurity.github.io/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Karla:400%20700" rel="stylesheet">
+<link href="/css/MaaxMono.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.3175c020876d6d28a22aebcceca1e03c1c5ca5215568aa54741d55542926de1e.css" integrity="sha256-MXXAIIdtbSiiKuvM7KHgPBxcpSFVaKpUdB1VVCkm3h4=">
+<link rel="stylesheet" type="text/css" href="https://falcosecurity.github.io/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+    <section class="hero is-fullheight is-default is-bold">
+  
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://falcosecurity.github.io/">
+        <img src="https://falcosecurity.github.io/images/logos/falco.png" alt="">
+      </a>
+    </div>
+    <div class="navbar-middle">
+      <p>
+        <a href="">
+          <img src="/images/logos/cncf-black.svg">
+        </a>  
+      </p>
+      <p>
+        Falco is a CNCF <a href="">Sandbox</a> level project.
+      </p>
+    </div>
+    <div id="navbar-menu" class="navbar-menu is-static">
+
+      <div class="navbar-end">
+        <a href="#features" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="#download" class="navbar-item is-secondary">
+          Download
+        </a>
+        <a href="https://github.com/falcosecurity/falco" class="navbar-item is-secondary">
+          GitHub
+        </a>
+        <a href="https://github.com/falcosecurity/falco/wiki" class="navbar-item is-secondary">
+          Docs
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+  
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://cssninja.io">
+        <img src="/images/logos/falco.png" alt="">
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+      <div class="navbar-end">
+        <a href="#features" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="#download" class="navbar-item is-secondary">
+          Download
+        </a>
+        <a href="https://github.com/falcosecurity/falco" class="navbar-item is-secondary">
+          GitHub
+        </a>
+        <a href="https://github.com/falcosecurity/falco/wiki" class="navbar-item is-secondary">
+          Docs
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+  
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-1 is-bold is-spaced">
+          Detect, Alert, Protect
+        </h1>
+        
+        <h2 class="subtitle is-5 is-muted">
+          Falco is an open source project for intrusion and abnormality detection for Cloud Native platforms such as Kubernetes, Mesosphere, and Cloud Foundry. Detect abnormal application behavior; alert via Slack, Fluentd, NATS, and more; Protect your platform by taking action through serverless (FaaS) frameworks and more.
+        </h2>
+        
+        <p>
+          <a class="button cta rounded primary-btn raised" href="#download">
+            Get started
+          </a>
+        </p>
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="image is-4by3">
+          <img src="/images/illustrations/worker.svg" alt="Description">
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h3 class="subtitle is-3 is-muted">Supported Integrations</h3>
+    </div>
+    <div class="tabs is-centered">
+      <ul>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/kubernetes.png">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/mesos.png">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/openshift.png">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/DC-OS.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+    
+<a id="features"></a>
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Key Features</h2>
+      <h3 class="subtitle is-5 is-muted"></h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Platform Aware</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/plug-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>Build rules specific to your Cloud Native platforms to enforce policy across all your containers &amp; microservices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Container-native</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/laptop-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>Runtime Security built for containers. Built from the ground up to natively support containerized applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Deep Visibility</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/plug-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>Complete container visibility through a single sensor. Gain insight into application and container behavior.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<a id="download"></a>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Downloads &amp; Resources</h1>
+        <h3 class="subtitle is-5 is-muted">Get started today, contribute to the open source project, &amp; learn more.</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-7 mt-40">
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p>
+              <img src="/images/illustrations/icons/contribute.png" width="75" height="75">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">CONTRIBUTE</span>
+
+                <span class="icon-box-text">Jump over to our GitHub page to contribute to our open source ecosystem.</span>
+                <a class="" href="/">
+                    Sysdig Falco Github
+                  </a>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p>
+              <img src="/images/illustrations/icons/download_288px.png" width="75" height="75">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Download</span>
+
+                <span class="icon-box-text">Get started with our Falco installation guide.</span>
+                <a class="" href="/">
+                    Sysdig Falco Install Guide
+                  </a>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p>
+              <img src="/images/illustrations/icons/documentation.png" width="75" height="75">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Documentation</span>
+
+                <span class="icon-box-text">Visit our wiki where you can find information about sysdig, csysdig, and their APIs.</span>
+                <a class="" href="/">
+                    Sysdig Falco Wiki
+                  </a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-third">
+        Copyright 2018, The Falco Authors
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://falcosecurity.github.io/js/fresh.js"></script>
+<script src="https://falcosecurity.github.io/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
