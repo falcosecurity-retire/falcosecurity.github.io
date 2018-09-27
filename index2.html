@@ -8,11 +8,11 @@
     <title>Falco - Cloud Native Runtime Security</title>
     
 
-<link rel="icon" type="image/png" href="https://falcosecurity.github.io/images/favicon.png" />
+<link rel="icon" type="image/png" href="http://falco.org/images/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=Karla:400%20700" rel="stylesheet">
 <link href="/css/MaaxMono.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/style.min.3175c020876d6d28a22aebcceca1e03c1c5ca5215568aa54741d55542926de1e.css" integrity="sha256-MXXAIIdtbSiiKuvM7KHgPBxcpSFVaKpUdB1VVCkm3h4=">
-<link rel="stylesheet" type="text/css" href="https://falcosecurity.github.io/css/icons.css">
+<link rel="stylesheet" type="text/css" href="/css/style.min.4ee2bd66715f7fcf22090ee4c9fb377693211670805a03c5d191d62ff70a2927.css" integrity="sha256-TuK9ZnFff88iCQ7kyfs3dpMhFnCAWgPF0ZHWL/cKKSc=">
+<link rel="stylesheet" type="text/css" href="http://falco.org/css/icons.css">
 
   </head>
   <body>
@@ -22,30 +22,28 @@
     </div>
 
     
-    <section class="hero is-fullheight is-default is-bold">
-  
 <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://falcosecurity.github.io/">
-        <img src="https://falcosecurity.github.io/images/logos/falco.png" alt="">
+      <a class="navbar-item" href="http://falco.org/">
+        <img class="navbar-brand__logo" src="http://falco.org/images/logos/falco-logo.svg" alt="">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
-    <div class="navbar-middle">
-      <p>
-        <a href="">
-          <img src="/images/logos/cncf-black.svg">
-        </a>  
-      </p>
-      <p>
-        Falco is a CNCF <a href="">Sandbox</a> level project.
-      </p>
-    </div>
+    
     <div id="navbar-menu" class="navbar-menu is-static">
 
-      <div class="navbar-end">
+      <div class="navbar-start">
         <a href="#features" class="navbar-item is-secondary">
           Features
+        </a>
+        <a href="#about" class="navbar-item is-secondary">
+          About
         </a>
         <a href="#download" class="navbar-item is-secondary">
           Download
@@ -57,22 +55,42 @@
           Docs
         </a>
       </div>
+
+      <div class="navbar-end">
+        <div class="c-cncf">
+          <a href="">
+            <img class="c-cncf__img" src="/images/logos/cncf-black.svg">
+          </a>
+          <p>
+            Falco is a CNCF <a href="">Sandbox</a> level project.
+          </p>
+        </div>
     </div>
+
   </div>
 </nav>
-  
+    
 <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://cssninja.io">
-        <img src="/images/logos/falco.png" alt="">
+      <a class="navbar-item" href="http://falco.org/">
+        <img class="navbar-brand__logo" src="http://falco.org/images/logos/falco-logo.svg" alt="Falco">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
 
     <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
-      <div class="navbar-end">
+      <div class="navbar-start">
         <a href="#features" class="navbar-item is-secondary">
           Features
+        </a>
+        <a href="#about" class="navbar-item is-secondary">
+          About
         </a>
         <a href="#download" class="navbar-item is-secondary">
           Download
@@ -84,17 +102,37 @@
           Docs
         </a>
       </div>
+
+      <div class="navbar-end">
+        <div class="c-nav-rule"></div>
+        <div class="c-cncf">
+          <a href="">
+            <img class="c-cncf__img" src="/images/logos/cncf-black.svg">
+          </a>
+          <p>
+            Falco is a CNCF <a href="">Sandbox</a> level project.
+          </p>
+        </div>
     </div>
 </div>
 </nav>
+    
+    <section class="hero is-default is-bold">
   
 <div class="hero-body">
   <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-5 is-offset-1 landing-caption">
-        <h1 class="title is-1 is-bold is-spaced">
+    <div class="columns u-logo-offset">
+      <div class="column landing-caption">
+        <h1 class="title is-3 is-spaced has-text-weight-normal">
           Detect, Alert, Protect
         </h1>
+      </div>
+    </div>
+    <div class="columns u-logo-offset">
+      <div class="column is-6 landing-caption">
+        <figure class="image hero__img is-hidden-tablet">
+          <img src="/images/illustrations/falco-hero-1.png" alt="Description">
+        </figure>
         
         <h2 class="subtitle is-5 is-muted">
           Falco is an open source project for intrusion and abnormality detection for Cloud Native platforms such as Kubernetes, Mesosphere, and Cloud Foundry. Detect abnormal application behavior; alert via Slack, Fluentd, NATS, and more; Protect your platform by taking action through serverless (FaaS) frameworks and more.
@@ -106,9 +144,9 @@
           </a>
         </p>
       </div>
-      <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
-          <img src="/images/illustrations/worker.svg" alt="Description">
+      <div class="column is-6 is-5-widescreen is-offset-1-widescreen">
+        <figure class="image hero__img is-hidden-mobile">
+          <img src="/images/illustrations/falco-hero-1.png" alt="Description">
         </figure>
       </div>
     </div>
@@ -120,41 +158,63 @@
     <div class="title-wrapper has-text-centered">
       <h3 class="subtitle is-3 is-muted">Supported Integrations</h3>
     </div>
-    <div class="tabs is-centered">
-      <ul>
-        <li>
-          <a>
-            <img class="partner-logo" src="/images/logos/clients/kubernetes.png">
-          </a>
-        </li>
-        <li>
-          <a>
-            <img class="partner-logo" src="/images/logos/clients/mesos.png">
-          </a>
-        </li>
-        <li>
-          <a>
-            <img class="partner-logo" src="/images/logos/clients/openshift.png">
-          </a>
-        </li>
-        <li>
-          <a>
-            <img class="partner-logo" src="/images/logos/clients/DC-OS.png">
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="c-logo-grid">
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/nats.svg" alt="Nats">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/kubeless.svg" alt="Kubeless">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/helm.svg" alt="Helm">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/rkt.svg" alt="Rkt">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/mesosphere.svg" alt="Mesosphere">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/docker.svg" alt="Docker">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/slack.svg" alt="Slack">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/kubernetes.svg" alt="Kubernetes">
+      </li>
+      <li class="c-logo-grid__item">
+        <img class="partner-logo" src="/images/logos/clients/fluentd.svg" alt="Fluentd">
+      </li>
+    </ul>
   </div>
 </div>
 </section>
     
-<a id="features"></a>
-<section class="section section-feature-grey is-medium">
+<a id="about"></a>
+<section class="section section-feature-grey">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">Key Features</h2>
-      <h3 class="subtitle is-5 is-muted"></h3>
+      <h2 class="title is-3 has-text-weight-normal">About Falco.</h2>
       <div class="divider is-centered"></div>
+    </div>
+    <div class="content-wrapper pb-0">
+      <div class="columns">
+        <div class="column is-10 is-offset-1 has-text-centered">
+          <p class="is-size-5 is-muted" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<a id="features"></a>
+<section class="section section--features section-feature-grey">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-3 has-text-weight-normal">Key Features.</h2>
+      <div class="divider is-centered"></div>
+      <h3 class="subtitle is-5 is-muted"></h3>
     </div>
 
     <div class="content-wrapper">
@@ -165,7 +225,7 @@
               <h4>Platform Aware</h4>
             </div>
             <div class="card-icon">
-                <img src="/images/illustrations/icons/plug-cloud.svg">
+                <img src="/images/illustrations/icons/check.png">
             </div>
             <div class="card-text">
                 <p>Build rules specific to your Cloud Native platforms to enforce policy across all your containers &amp; microservices.</p>
@@ -178,7 +238,7 @@
               <h4>Container-native</h4>
             </div>
             <div class="card-icon">
-                <img src="/images/illustrations/icons/laptop-cloud.svg">
+                <img src="/images/illustrations/icons/box.png">
             </div>
             <div class="card-text">
                 <p>Runtime Security built for containers. Built from the ground up to natively support containerized applications.</p>
@@ -191,7 +251,7 @@
               <h4>Deep Visibility</h4>
             </div>
             <div class="card-icon">
-                <img src="/images/illustrations/icons/plug-cloud.svg">
+                <img src="/images/illustrations/icons/scalable.png">
             </div>
             <div class="card-text">
                 <p>Complete container visibility through a single sensor. Gain insight into application and container behavior.</p>
@@ -207,77 +267,83 @@
 <section class="section is-medium">
   <div class="container">
     <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">Downloads &amp; Resources</h1>
-        <h3 class="subtitle is-5 is-muted">Get started today, contribute to the open source project, &amp; learn more.</h3>
-        <div class="divider"></div>
-      </div>
-      <div class="column is-7 mt-40">
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p>
-              <img src="/images/illustrations/icons/contribute.png" width="75" height="75">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">CONTRIBUTE</span>
+      <div class="column is-10 is-offset-1">
+        <div class="columns">
 
-                <span class="icon-box-text">Jump over to our GitHub page to contribute to our open source ecosystem.</span>
-                <a class="" href="/">
-                    Sysdig Falco Github
-                  </a>
-              </p>
-            </div>
+          <div class="column is-centered-tablet-portrait">
+            <h1 class="title is-3 has-text-weight-normal section-title">Downloads &#43; Resources.</h1>
+            <h3 class="subtitle is-5 is-muted">Get started today, contribute to the open source project, &amp; learn more.</h3>
+            <div class="divider"></div>
           </div>
-        </article>
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p>
-              <img src="/images/illustrations/icons/download_288px.png" width="75" height="75">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">Download</span>
 
-                <span class="icon-box-text">Get started with our Falco installation guide.</span>
-                <a class="" href="/">
-                    Sysdig Falco Install Guide
-                  </a>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p>
-              <img src="/images/illustrations/icons/documentation.png" width="75" height="75">
-            </p>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">Documentation</span>
+          <div class="column mt-45">
+            <article class="media icon-box">
+              <figure class="media-left">
+                <p>
+                  <img src="/images/illustrations/icons/group.png" width="85" height="85">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <span class="icon-box-title">CONTRIBUTE</span>
 
-                <span class="icon-box-text">Visit our wiki where you can find information about sysdig, csysdig, and their APIs.</span>
-                <a class="" href="/">
-                    Sysdig Falco Wiki
-                  </a>
-              </p>
-            </div>
+                    <span class="icon-box-text">Jump over to our GitHub page to contribute to our open source ecosystem.</span>
+                    <a class="" href="/">
+                        Sysdig Falco Github
+                      </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="media icon-box">
+              <figure class="media-left">
+                <p>
+                  <img src="/images/illustrations/icons/download.png" width="85" height="85">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <span class="icon-box-title">Download</span>
+
+                    <span class="icon-box-text">Get started with our Falco installation guide.</span>
+                    <a class="" href="/">
+                        Sysdig Falco Install Guide
+                      </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="media icon-box">
+              <figure class="media-left">
+                <p>
+                  <img src="/images/illustrations/icons/documentation-2.png" width="85" height="85">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <span class="icon-box-title">Documentation</span>
+
+                    <span class="icon-box-text">Visit our wiki where you can find information about sysdig, csysdig, and their APIs.</span>
+                    <a class="" href="/">
+                        Sysdig Falco Wiki
+                      </a>
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
+
+        </div>
     </div>
   </div>
 </section>
     
 <footer class="footer footer-dark">
   <div class="container">
-    <div class="columns">
+    <div class="columns u-logo-offset">
       <div class="column is-one-third">
         Copyright 2018, The Falco Authors
       </div>
@@ -293,8 +359,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
-<script src="https://falcosecurity.github.io/js/fresh.js"></script>
-<script src="https://falcosecurity.github.io/js/jquery.panelslider.min.js"></script>
+<script src="http://falco.org/js/fresh.js"></script>
+<script src="http://falco.org/js/jquery.panelslider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </body>
 </html>
