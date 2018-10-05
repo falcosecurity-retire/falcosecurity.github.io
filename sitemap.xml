@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://falco.org/categories/</loc>
+    <loc>https://falco.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://falco.org/</loc>
+    <loc>https://falco.org/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://falco.org/tags/</loc>
+    <loc>https://falco.org/tags/</loc>
     <priority>0</priority>
   </url>
   
